@@ -31,7 +31,7 @@
 				<key>activeGuide</key>
 				<string>#7fb11b</string>
 				<key>background</key>
-				<string>#222222</string>
+				<string>#272822</string>
 				<key>bracketContentsForeground</key>
 				<string>#f8f8f2a5</string>
 				<key>bracketContentsOptions</key>
@@ -1266,10 +1266,12 @@
 			<key>scope</key>
 			<string>text.html.markdown markup.raw.inline</string>
 			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ec3533</string>
-			</dict>
+            <dict>
+                <key>background</key>
+                <string>#131313</string>
+                <key>foreground</key>
+                <string>#aaaaaa</string>
+            </dict>			
 		</dict>
 		<dict>
 			<key>name</key>
@@ -1290,7 +1292,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#fd971f</string>
 			</dict>
@@ -1304,8 +1306,17 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
-				<key>foreground</key>
-				<string>#e42e70</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup: italic</string>
+			<key>scope</key>
+			<string>markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1317,10 +1328,78 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#f92672</string>
 			</dict>
 		</dict>
+		<dict>
+            <key>name</key>
+            <string>Markdown: Lists</string>
+            <key>scope</key>
+            <string>
+                , markup.list.unnumbered.markdown punctuation.definition.list_item.markdown,
+                , markup.list.numbered.markdown punctuation.definition.list_item.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#aaa</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Block code</string>
+            <key>scope</key>
+            <string>markup.raw.block.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#131313</string>
+                <key>foreground</key>
+                <string>#ddd</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Strikethrough</string>
+            <key>scope</key>
+            <string>
+                , markup.strikethrough,
+                , markup.strikethrough.markdown,
+                , markup.strikethrough constant.other.reference.link.markdown,
+                , markup.strikethrough entity.name.tag,
+                , markup.strikethrough markup.bold,
+                , markup.strikethrough markup.bold.markdown,
+                , markup.strikethrough markup.italic,
+                , markup.strikethrough markup.italic.markdown,
+                , markup.strikethrough markup.raw.inline.markdown,
+                , markup.strikethrough markup.underline.link.image.markdown,
+                , markup.strikethrough markup.underline.link.markdown,
+                , markup.strikethrough meta.link.inet.markdown markup.underline.link.markdown,
+                , markup.strikethrough meta.link.email.lt-gt.markdown markup.underline.link.markdown,
+                , markup.strikethrough punctuation.definition.bold.markdown,
+                , markup.strikethrough punctuation.definition.italic.markdown,
+                , markup.strikethrough punctuation.definition.constant.begin.markdown,
+                , markup.strikethrough punctuation.definition.constant.end.markdown,
+                , markup.strikethrough punctuation.definition.constant.markdown,
+                , markup.strikethrough punctuation.definition.metadata.markdown,
+                , markup.strikethrough punctuation.definition.raw.markdown,
+                , markup.strikethrough punctuation.definition.strikethrough.markdown,
+                , markup.strikethrough punctuation.definition.string.begin.markdown,
+                , markup.strikethrough punctuation.definition.string.end.markdown,
+                , markup.strikethrough punctuation.definition.tag.begin.html,
+                , markup.strikethrough punctuation.definition.tag.end.html,
+                , markup.strikethrough string.other.link.description.markdown,
+                , markup.strikethrough string.other.link.description.title.markdown,
+                , markup.strikethrough string.other.link.title.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#757575</string>
+            </dict>
+        </dict>
+
+
+
 		<dict>
 			<key>name</key>
 			<string>Markup: underline</string>
@@ -1355,7 +1434,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string> italic</string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#66d9ef</string>
 			</dict>
@@ -1373,6 +1452,20 @@
 				<string>#66d9ef</string>
 			</dict>
 		</dict>
+		        <dict>
+            <key>name</key>
+            <string>Markup: Plain Link</string>
+            <key>scope</key>
+            <string>
+                , meta.link.inet.markdown markup.underline.link.markdown,
+                , meta.link.email.lt-gt.markdown markup.underline.link.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+								<key>fontStyle</key>
+								<string>underline</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>name</key>
 			<string>Markup: Raw block</string>
